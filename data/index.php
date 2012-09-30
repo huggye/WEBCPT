@@ -1,7 +1,7 @@
 <?php
 $val = $_COOKIE['val'];
 if ($val == "0x192837465") {
-echo "<b><p align='center'>NO ID AREA</b><br><br><a href='http://noidarea.altervista.org/data/'>DATA LIST</a> <a href='http://noidarea.altervista.org/add.php'>ADD DATA</a><br><br></p>";
+echo "<b><p align='center'>NO ID AREA</b><br><br><a href='/'>DATA LIST</a> <a href='../add.php'>ADD DATA</a><br><br></p>";
 chdir("./");
 if( !($dp = opendir("./")) )
 die("Non riesco a esplorare il contenuto");
@@ -15,7 +15,7 @@ sort($lista);
 
 foreach($lista as $index => $nome) {
 if ($nome != "index.php") {
-echo '<a href="http://noidarea.altervista.org/?d='.$nome.'">'.$nome.'</a><br>';
+echo '<a href="../?d='.$nome.'">'.$nome.'</a><br>';
 }
 }
 } else {

@@ -33,10 +33,10 @@ $text = str_replace('.-&$/$£%$%$&£_.', '7', $text);
 $text = str_replace('.-$%!%%£$/%&%_.', '8', $text);
 $text = str_replace('.-()%%$£$/&&(_.', '9', $text);
 $text = str_replace('.-!!"£))($%&&_.', '0', $text);
-echo "<b><p align='center'>NO ID AREA</b><br><br><a href='http://noidarea.altervista.org/data/'>DATA LIST</a> <a href='http://noidarea.altervista.org/add.php'>ADD DATA</a><br><br><font size='7'><b>".$_GET['d']."</b></font></p>";
+echo "<b><p align='center'>NOTE</b><br><br><a href='data/'>DATA LIST</a> <a href='add.php'>ADD DATA</a><br><br><font size='7'><b>".$_GET['d']."</b></font></p>";
 echo $text;
 } else {
-echo "<b><p align='center'>NO ID AREA</b><br><br>";
-echo "<a href='http://noidarea.altervista.org/log.php'>LogIn</a>";
+echo "<b><p align='center'>NOTE</b><br><br>";
+echo "<a href='log.php'>LogIn</a>";
 }
 ?>

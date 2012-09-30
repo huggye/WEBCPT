@@ -34,6 +34,6 @@ $text = str_replace('>', '.-!"(£(%))£/"_.', $text);
 $fpe = fopen($ix, 'w+');
 fwrite($fpe, $text);
 fclose($fpe);
-echo "<a href='http://noidarea.altervista.org/?d=".$_POST['name']."'>http://noidarea.altervista.org/?d=".$_POST['name']."<a>";
+echo "<a href='?d=".$_POST['name']."'>?d=".$_POST['name']."<a>";
 }
 ?>
